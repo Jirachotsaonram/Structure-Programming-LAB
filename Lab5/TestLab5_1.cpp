@@ -16,10 +16,10 @@ void star(int number)
 }
 int main()
 {
-    int n;
+    int n1,n2,n3,n4,n5;
 
     cout << "Enter five numbers: ";
-    cin >> n;
-    star(n);
+    cin >> n1 >> n2 >> n3 >> n4 >> n5;
+    star(n1,n2,n3,n4,n5);
     return 0;
 }
