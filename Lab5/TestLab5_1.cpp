@@ -1,25 +1,26 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-void star(int number)
+void printstar(int num)
 {
-    for (int i = 0; i < 5; i++)
+    for (int j = 0; j < num; j++)
     {
-       
-        cout << setw(2) << number << " : ";
-        for (int j = 0; j < number; j++)
-        {
-            cout << "*";
-        }
-        cout << endl;
+        cout << "*";
     }
 }
+
 int main()
 {
-    int n1,n2,n3,n4,n5;
+    int number;
 
     cout << "Enter five numbers: ";
-    cin >> n1 >> n2 >> n3 >> n4 >> n5;
-    star(n1,n2,n3,n4,n5);
+
+    for (int i = 0; i < 5; i++)
+    {
+        cin >> number;
+        cout << setw(2) << number << " : ";
+        printstar(number);
+        cout << endl;
+    }
     return 0;
 }
