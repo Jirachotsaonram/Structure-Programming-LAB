@@ -1,0 +1,1 @@
+int total_votes = rand() % 500 + 1;

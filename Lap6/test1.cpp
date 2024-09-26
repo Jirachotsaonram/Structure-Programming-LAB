@@ -1,23 +1,34 @@
 #include <iostream>
-#include <string>
-#include <algorithm>
+#include <cstring>
 using namespace std;
-bool isPalindrome(const string word);
-int main(){
-    string word;
-    cout << "Enter text : " ;
-    getline(cin,word);
-    bool result = isPalindrome(word);
-    for()
-    if(result) ? "Your text is Palindrome." : "Your text is not Palindrome." ;
-    return 0 ;
-}
-bool isPalindrome(const string word){
-    char c[];
-    for(const char w : word){
-        int i = 0;
-        c[i] = w;
-        i++;
+
+bool isPalindrome(char str[])
+{
+    int length = strlen(str);
+    for (int i = 0; i < length / 2; i++)
+    {
+        cout << str[i] << " = " << str[length - i - 1] << endl;
+        if (str[i] != str[length - i - 1])
+        {
+            return false;
+        }
     }
-    return false;
+    return true;
+}
+
+int main()
+{
+    char str[200];
+    cout << "Enter text: ";
+    cin >> str;
+    if (isPalindrome(str))
+    {
+        cout << "Your text is Palindrome.\n";
+    }
+    else
+    {
+        cout << "Your text is not Palindrome.\n";
+    }
+
+    return 0;
 }
