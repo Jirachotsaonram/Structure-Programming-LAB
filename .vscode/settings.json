@@ -58,7 +58,8 @@
     "random": "cpp",
     "string_view": "cpp",
     "numbers": "cpp",
-    "sstream": "cpp"
+    "sstream": "cpp",
+    "fstream": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp_Runner.cCompilerPath": "gcc",
